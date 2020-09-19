@@ -1,10 +1,6 @@
 <style type="text/css">
 
-#zenImg 
-{
-  width: 730px;
-  height: 300px;
-}
+
 
 #zenImg 
 {
@@ -13,7 +9,11 @@
   transition: 0.9s;
 }
 
-
+#zenImg 
+{
+  width: 730px;
+  height: 300px;
+}
 
 #zenImg: hover {opacity: 0.7;}
 
