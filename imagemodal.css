@@ -1,19 +1,22 @@
 <style type="text/css">
 
-#zenImg: hover {opacity: 0.7;}
-
-#zenImg 
-{
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.9s;
-}
-
 #zenImg 
 {
   width: 730px;
   height: 300px;
 }
+
+#zenImg: hover {opacity: 0.7;}
+
+/*
+#zenImg 
+{
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.9s;
+}*/
+
+
 
 
 /* The Modal (background) */
