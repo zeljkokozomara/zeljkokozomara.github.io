@@ -1,6 +1,3 @@
-<script>
-
-
 function theFunction(e)
 { 
 
@@ -30,5 +27,3 @@ span.onclick = function()
 
 }
 
-
-</script>
