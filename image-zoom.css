@@ -12,3 +12,16 @@ figure.containerZoom.active img
 {
   opacity:0
 }
+
+
+#imageZoom: hover {opacity: 0.7;}
+
+#imageZoom 
+{
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.9s;
+  border-width: 6px;
+  border-style: solid;
+  border-color: #FFF;
+}
