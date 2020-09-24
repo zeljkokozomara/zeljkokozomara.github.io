@@ -2,7 +2,7 @@ figure.containerZoom
 {
   background-position:50% 50%;
   position:relative;
-  width:95%;
+  width:100%;
   overflow:hidden;
   cursor:zoom-in;
   margin:0
