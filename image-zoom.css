@@ -10,7 +10,11 @@ figure.containerZoom
 
 figure.containerZoom img
 {
-  transition:opacity .5s;display:block;width:100%
+  transition:opacity .5s;
+  display:block;
+  width:100%;
+  border-width: 5px ;
+  border-style: solid ;
 }
 
 figure.containerZoom.active img
