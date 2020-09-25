@@ -7,6 +7,7 @@
   border-radius: 5px;
   cursor: pointer;
   transition: 0.9s;
+  width: 99%;
   border-width: 5px;
   border-style: solid;
 }
