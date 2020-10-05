@@ -9,7 +9,7 @@
   transition: 0.9s;
   width:100%;
   overflow:automatic;
-  border-width: 5px;
+  border-width: 0px;
   border-style: solid;
 }
 
