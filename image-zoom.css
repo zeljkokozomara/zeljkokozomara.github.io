@@ -15,6 +15,7 @@ figure.containerZoom img
   width:100%;
   border-width: 0px;
   border-style: solid;
+  cursor:zoom-out;
 }
 
 figure.containerZoom.active img
