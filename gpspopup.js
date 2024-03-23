@@ -11,7 +11,7 @@ function gpstrack(gpslink)
     })
     .catch(error => 
     {
-        alert ('To access this content, Please support the Site by disabling Ad Block and clicking on Google Add');
+        alert ('To access this content, Please support the Site by disabling Ad Block and clicking on Google Ad');
     });
 
 }
