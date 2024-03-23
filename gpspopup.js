@@ -11,7 +11,7 @@ function gpstrack(gpslink)
     })
     .catch(error => 
     {
-        alert ('Please disable Ad Block to View Google Map or Download GPS Track');
+        alert ('To access this content, Please support the Site by disabling Ad Block and clicking on Google Add');
     });
 
 }
