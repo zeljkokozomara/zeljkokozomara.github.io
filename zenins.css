@@ -1,7 +1,6 @@
-<!-- Style for INS Tag not to have to modify zen source after every edit -->
-<style type="text/css">ins 
+ins
 {
   display: block;
-  text-decoration:none;
+  text-decoration: none;
 }
-</style>
+
