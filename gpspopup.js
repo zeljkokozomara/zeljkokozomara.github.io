@@ -2,7 +2,7 @@
 
 function gpstrack(gpslink)
 {
-   /* let url = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+   let url = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
    
    fetch(url)
     .then(response =>
@@ -11,8 +11,8 @@ function gpstrack(gpslink)
     })
     .catch(error => 
     {
-        alert ('To access this content, Please support the Site by disabling Ad Block and clicking on Google Ad');
-    }); */
+        alert ('To access this content, Please disable the Ad Block');
+    }); 
 
    window.open(gpslink, '_blank');
 
