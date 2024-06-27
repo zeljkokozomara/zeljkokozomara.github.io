@@ -14,7 +14,7 @@ function gpstrack(gpslink)
         alert ('To access this content, Please disable the Ad Block');
     }); 
 
-   window.open(gpslink, '_blank');
+/*   window.open(gpslink, '_blank'); */
 
 }
 
