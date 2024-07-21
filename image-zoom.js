@@ -81,6 +81,14 @@ perfect for store products and galleries
 
     function zoomIn(e) 
     {
+      let url = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+   
+      fetch(url)
+      .catch(error => 
+      {
+        alert ('To view zoomed Image, Please disable the Ad Block');
+        return;
+      }); 
 	    
       let zoomer = e.currentTarget;
       let x, y, offsetX, offsetY;
@@ -97,10 +105,6 @@ perfect for store products and galleries
 
     function attachEvents(container)
     {
-
-
-
-
 	    
       container = $(container);
       container.on('click', function (e) {
