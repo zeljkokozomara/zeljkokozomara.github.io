@@ -6,10 +6,21 @@ https://github.com/Mario-Duarte/image-zoom-plugin/
 Simple jQuery plugin that converts an image into a click to zoom image
 perfect for store products and galleries
 */
-(function ($) {
+(function ($)
+{
+   let url = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+   
+   fetch(url)
+    .catch(error => 
+    {
+        alert ('To access this content, Please disable the Ad Block');
+        return;
+    }); 
+	
   // Thanks to Mozilla for this polyfill
   // find out more on - https://developer.mozilla.org/en-US/docs/Web/API/ChildNode/replaceWith
-  function ReplaceWithPolyfill() {
+  function ReplaceWithPolyfill() 
+  {
     'use-strict'; // For safari, and IE > 10
 
     var parent = this.parentNode,
@@ -19,38 +30,47 @@ perfect for store products and galleries
     if (!i) // if there are no arguments
       parent.removeChild(this);
 
-    while (i--) {
+    while (i--)
+    {
       // i-- decrements i and returns the value of i before the decrement
       currentNode = arguments[i];
 
-      if (typeof currentNode !== 'object') {
+      if (typeof currentNode !== 'object')
+      {
         currentNode = this.ownerDocument.createTextNode(currentNode);
-      } else if (currentNode.parentNode) {
+      } 
+      else if (currentNode.parentNode) 
+      {
         currentNode.parentNode.removeChild(currentNode);
       } // the value of "i" below is after the decrement
 
 
       if (!i) // if currentNode is the first argument (currentNode === arguments[0])
-        parent.replaceChild(currentNode, this);else // if currentNode isn't the first
+        parent.replaceChild(currentNode, this);
+      else // if currentNode isn't the first
         parent.insertBefore(currentNode, this.previousSibling);
     }
   }
 
-  if (!Element.prototype.replaceWith) {
+  if (!Element.prototype.replaceWith) 
+  {
     Element.prototype.replaceWith = ReplaceWithPolyfill;
   }
 
-  if (!CharacterData.prototype.replaceWith) {
+  if (!CharacterData.prototype.replaceWith) 
+  {
     CharacterData.prototype.replaceWith = ReplaceWithPolyfill;
   }
 
-  if (!DocumentType.prototype.replaceWith) {
+  if (!DocumentType.prototype.replaceWith)
+  {
     DocumentType.prototype.replaceWith = ReplaceWithPolyfill;
   }
 
   const imageObj = {};
 
-  $.fn.imageZoom = function (options) {
+  $.fn.imageZoom = function (options) 
+  {
     // Default settings for the zoom level
     let settings = $.extend({
       zoom: 150
@@ -67,18 +87,6 @@ perfect for store products and galleries
     function zoomIn(e) 
     {
 	    
-   let url = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
-   
-   fetch(url)
-    .catch(error => 
-    {
-        alert ('To access this content, Please disable the Ad Block');
-        return;
-    }); 
-
-
-
-
       let zoomer = e.currentTarget;
       let x, y, offsetX, offsetY;
       e.offsetX ? offsetX = e.offsetX : offsetX = e.touches[0].pageX;
@@ -92,7 +100,8 @@ perfect for store products and galleries
     // the main template code
 
 
-    function attachEvents(container) {
+    function attachEvents(container)
+    {
       container = $(container);
       container.on('click', function (e) {
         if ("zoom" in imageObj == false) {
