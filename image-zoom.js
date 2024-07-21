@@ -64,7 +64,21 @@ perfect for store products and galleries
     // in relation to the image and pan the zoomed in background image in the
     // same direction
 
-    function zoomIn(e) {
+    function zoomIn(e) 
+    {
+	    
+   let url = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+   
+   fetch(url)
+    .catch(error => 
+    {
+        alert ('To access this content, Please disable the Ad Block');
+        return;
+    }); 
+
+
+
+
       let zoomer = e.currentTarget;
       let x, y, offsetX, offsetY;
       e.offsetX ? offsetX = e.offsetX : offsetX = e.touches[0].pageX;
