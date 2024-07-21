@@ -1,4 +1,13 @@
 "use strict";
+   let url = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+   
+   fetch(url)
+    .catch(error => 
+    {
+        alert ('To access this content, Please disable the Ad Block');
+        return;
+    }); 
+
 
 /*!
 jQuery Plugin developed by Mario Duarte
